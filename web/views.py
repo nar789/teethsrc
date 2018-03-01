@@ -18,6 +18,7 @@ def load(request):
 	return render(request,"web/load.html",{'t':t})
 
 def index(request):
+	return HttpResponse('hiyo')
 	if request.method == "POST":
 		tid=request.POST['id']
 		tid=int(tid)
